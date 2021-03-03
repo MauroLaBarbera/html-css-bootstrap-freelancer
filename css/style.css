@@ -6,3 +6,9 @@ header  {
     font-weight: 700;
     font-size: 18px;
 }
+
+header .row a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
