@@ -2,6 +2,7 @@ body {
     color: #fff;
     font-weight: 700;
     font-size: 16px;
+    padding-top: 70px;
 }
 
 a {
@@ -9,6 +10,7 @@ a {
    color: #fff;
    font-size: 14px;
 }
+
 
 /* UTILITY */
 .bold {
@@ -40,28 +42,41 @@ a {
     margin-top: 20px;
 }
 
+.star {
+    font-size: 45px;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.hr {
+    width: 150px;
+    border: 5px solid;
+    display: inline-block;
+    border-radius: 10px;
+}
 
 /* HEADER */
-header {
+.bg-blue {
     background: #2c3e50;
-    line-height: 5;
 }
 
-header .row li {
-    list-style: none;
-    text-align: center;
-    float: left;
-    padding-left: 15px;
+header .navbar-default .navbar-nav>li>a,
+header .navbar-default .navbar-brand {
+    color: #fff;
 }
 
-.start {
-    text-align: left;
-}
 
+.navbar a {
+    color: #fff;
+}
 
 /* JUMBOTRON */
 .hero {
     background:#1abc9c;
+}
+
+.hero .container img {
+    width: 300px;
 }
 
 .card {
@@ -78,6 +93,10 @@ header .row li {
     color: #2c3e50;
 }
 
+.portfolio .row img {
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
 
 /* CONTACT */
 .contact {
@@ -103,5 +122,5 @@ header .row li {
 .foot {
     background: #2c3e50;
     text-align: center;
-    padding: 100px;
+    padding: 20px;
 }
