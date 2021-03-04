@@ -19,7 +19,7 @@ a {
 }
 
 .padding {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -35,6 +35,10 @@ a {
     border-radius: 5px;
     max-width: 130px;
     margin-bottom: 30px;
+}
+
+.btn i {
+    padding-right: 5px;
 }
 
 .btn-green {
@@ -71,11 +75,11 @@ header .navbar-default .navbar-brand {
 }
 
 /* JUMBOTRON */
-.hero {
+.bg-green {
     background:#1abc9c;
 }
 
-.hero .container img {
+.jumbo .container img {
     width: 300px;
 }
 
