@@ -5,12 +5,16 @@ body {
     padding-top: 70px;
 }
 
+html {
+    scroll-padding: 90px;
+    scroll-behavior: smooth;
+}
+
 a {
    text-decoration: none;
    color: #fff;
    font-size: 14px;
 }
-
 
 h1 {
     font-size: 56px;
@@ -42,11 +46,12 @@ h1 {
     margin-bottom: 30px;
 }
 
-.btn-light:hover {
+/* .btn-light:hover,
+.btn-green:focus {
     background: #3a546d;
     border-color: #3a546d;
     color: #fff;
-}
+} */
 
 .btn i {
     padding-right: 5px;
@@ -55,6 +60,11 @@ h1 {
 .btn-green {
     background: #1abc9c;
     margin-top: 20px;
+    color: #fff;
+}
+.btn-green:hover,
+.btn-green:focus {
+    background: #159a80;
     color: #fff;
 }
 
@@ -84,11 +94,19 @@ header .navbar-default .navbar-brand {
 header .navbar-default .navbar-brand:hover,
 header .navbar-default .navbar-nav>li>a:hover {
     color:#1abc9c;
+}
 
+header .navbar-default .navbar-brand:focus,
+header .navbar-default .navbar-nav>li>a:focus {
+    color:#1abc9c;
 }
 
 .navbar a {
     color: #fff;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+    background: #fff;
 }
 
 /* JUMBOTRON */
@@ -100,23 +118,51 @@ header .navbar-default .navbar-nav>li>a:hover {
     width: 300px;
 }
 
-.card {
-    max-width: 100%;
-    height: 300px;
-    border-radius: 10px; 
-    margin-bottom: 30px;
-    background: #ccc;
-}
-
 
 /* PORTFOLIO */
 .portfolio {
     color: #2c3e50;
 }
 
+.card {
+    position: relative;
+}
+
+.portfolio .card .plus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(26, 188, 156, 0.9);
+    border-radius: 10px;
+}
+
+.portfolio .plus .plus-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    font-size: 60px;
+    transform: translate(-50%, 0);
+    transition: bottom .3s;
+}
+
+.portfolio .card .plus:hover {
+    opacity: 1;
+}
+
+.portfolio .card .plus:hover .plus-icon {
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+}
+
 .portfolio .row img {
     margin-bottom: 20px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .about .btn {
@@ -170,8 +216,13 @@ header .navbar-default .navbar-nav>li>a:hover {
     margin-right: 5px;
 }
 
+.btn-light:hover,
+.btn-green:focus,
+.top-foot .social:hover, 
 .top-foot .social a:hover {
-    color: #1abc9c;
+    color: black;
+    background-color: #fff;
+    
 }
 
 /* FOOTER */

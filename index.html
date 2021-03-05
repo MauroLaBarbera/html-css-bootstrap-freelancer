@@ -17,7 +17,7 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-default navbar-fixed-top bg-blue">
-            <div class="container-fluid padding">
+            <div class="container padding">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -26,7 +26,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                <a class="navbar-brand" href="#jumbo">START BOOTSTRAP</a>
               </div>
           
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,9 +43,9 @@
                   </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">PORTFOLIO</a></li>
-                  <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">CONTACT</a></li>
+                  <li><a href="#portfolio">PORTFOLIO</a></li>
+                  <li><a href="#about">ABOUT</a></li>
+                  <li><a href="#contact">CONTACT</a></li>
                   
                     </ul>
                   </li>
@@ -56,7 +56,7 @@
     </header>
 
     <!-- JUMBOTRON -->
-    <section class="jumbo bg-green">
+    <section id="jumbo" class="jumbo bg-green">
             <div class="container padding t-a-c ">
                 <div class="row">
                     <div class="col-xs-12">
@@ -82,7 +82,7 @@
     </section>
 
     <!-- PORTFOLIO -->
-    <section class="portfolio padding">
+    <section class="portfolio padding" id="portfolio">
         <div class="container bold t-a-c">
                 <h1>PORTFOLIO</h1>
                 <div class=" padding col-xs-12 t-a-c">
@@ -92,22 +92,52 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/cabin.png" alt="cabin">
+                        <div class="card">
+                            <img class="img-responsive img-rounded" src="./img/cabin.png" alt="cabin">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/cake.png" alt="cake">
+                        <div class="card">
+                            <img class="img-responsive" src="./img/cake.png" alt="cake">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/circus.png" alt="circus">
+                        <div class="card">
+                            <img class="img-responsive" src="./img/circus.png" alt="circus">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/game.png" alt="game">
+                        <div class="card">
+                            <img class="img-responsive" src="./img/game.png" alt="game">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/safe.png" alt="safe">
+                        <div class="card">
+                            <img class="img-responsive" src="./img/safe.png" alt="safe">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-xs-12 col-md-6 col-lg-4">
-                        <img class="img-responsive" src="./img/submarine.png" alt="submarine">
+                        <div class="card">
+                            <img class="img-responsive" src="./img/submarine.png" alt="submarine">
+                            <div class="plus">
+                                <i class="fas fa-plus plus-icon"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>            
@@ -115,7 +145,7 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="about bg-green">
+    <section class="about bg-green" id="about">
             <div class="container padding">
                 <div class="row">
                     <div class="col-xs-12 bold padding t-a-c">
@@ -152,7 +182,7 @@
     </section>
 
     <!-- CONTACT ME -->
-    <section class="contact">
+    <section class="contact" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 bold padding t-a-c">
@@ -206,18 +236,10 @@
                          <div class="bold">
                             <h2>around the web</h2>
                          </div>
-                         <div class="social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                         </div>
-                         <div class="social">
-                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                         </div>
-                         <div class="social">
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                         </div>
-                         <div class="social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                         </div>
+                            <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="social" href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-xs-12 col-md-4">
                          <div class="bold">
