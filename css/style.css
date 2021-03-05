@@ -122,6 +122,7 @@ header .navbar-default .navbar-toggle .icon-bar{
 /* PORTFOLIO */
 .portfolio {
     color: #2c3e50;
+    padding: 20px;
 }
 
 .card {
@@ -138,6 +139,7 @@ header .navbar-default .navbar-toggle .icon-bar{
     transition: opacity 0.3s;
     background-color: rgba(26, 188, 156, 0.9);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .portfolio .plus .plus-icon {
